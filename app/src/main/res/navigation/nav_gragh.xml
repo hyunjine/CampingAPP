@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <!-- 메인 프래그먼트 -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.camping.view.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_selectAreaFragment"
+            app:destination="@id/selectAreaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- 검색 프래그먼트 -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.camping.view.SearchFragment"
+        android:label="SearchFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- 내주변 프래그먼트 -->
+    <fragment
+        android:id="@+id/aroundFragment"
+        android:name="com.example.camping.view.AroundFragment"
+        android:label="AroundFragment"
+        tools:layout="@layout/fragment_around">
+        <action
+            android:id="@+id/action_aroundFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- 찜 프래그먼트 -->
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.camping.view.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- 지역 검색 프래그먼트 -->
+    <fragment
+        android:id="@+id/selectAreaFragment"
+        android:name="com.example.camping.view.SelectAreaFragment"
+        android:label="SelectAreaFragment"
+        tools:layout="@layout/fragment_select_area">
+        <argument
+            android:name="data"
+            app:argType="com.example.camping.util.data.SelectAreaFragmentSafeArgs" />
+        <action
+            android:id="@+id/action_selectAreaFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- 리스트 프래그먼트 -->
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.camping.view.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list">
+        <argument
+            android:name="data"
+            android:defaultValue="@null"
+            app:argType="com.example.camping.util.data.ListFragmentSafeArgs"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- 디테일 프래그먼트 -->
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.camping.view.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="data"
+            app:argType="com.example.camping.util.data.DetailFragmentSafeArgs" />
+    </fragment>
+
+    <!-- 뷰 페이저 프래그먼트 -->
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.camping.view.ViewPagerFragment"
+        android:label="ViewPagerFragment"
+        tools:layout="@layout/fragment_viewpager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>

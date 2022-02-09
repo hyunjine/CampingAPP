@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.camping.viewModel.SelectAreaViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/app_primary_color">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/app_primary_color"
+                android:onClick="@{() -> viewModel.backStack()}"
+                android:src="@drawable/ic_back_stack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_action_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ugro_m"
+                android:text="@string/select_action_bar"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onClickGyeongGi()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gyung_gi" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onClickChungCheong()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/choong_chung" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onClickGyeongSang()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gyung_sang" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                area="@string/gyung_gi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ugro_m"
+                android:gravity="center"
+                android:text="@{@string/concat(@string/gyung_gi, `권`)}"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                area="@string/choong_chung"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ugro_m"
+                android:gravity="center"
+                android:text="@{@string/concat(@string/choong_chung, `권`)}"
+                android:textColor="@color/black" />
+
+            <TextView
+                area="@string/gyung_sang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ugro_m"
+                android:gravity="center"
+                android:text="@{@string/concat(@string/gyung_sang, `권`)}"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onClickJeJu()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/je_ju" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onClickGangWon()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gang_won" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="@{() -> viewModel.onClickJeoLa()}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/jun_la" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                area="@string/je_ju"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ugro_m"
+                android:gravity="center"
+                android:text="@{@string/concat(@string/je_ju, `권`)}"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                area="@string/gang_won"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ugro_m"
+                android:gravity="center"
+                android:text="@{@string/concat(@string/gang_won, `권`)}"
+                android:textColor="@color/black" />
+
+            <TextView
+                area="@string/jun_la"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ugro_m"
+                android:gravity="center"
+                android:text="@{@string/concat(@string/jun_la, `권`)}"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

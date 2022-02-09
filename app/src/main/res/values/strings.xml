@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Camping</string>
+    <string name="app_name_kor">캠핑</string>
+    <!-- 메인 - 이미지 버튼 이름 -->
+    <string name="auto">오토캠핑</string>
+    <string name="glamping">글램핑</string>
+    <string name="caravan">카라반</string>
+    <!-- 메인 - 추천 야영지 소개 글귀 -->
+    <string name="recommend">추천 캠핑장</string>
+    <!-- 메인 - 추천 여행지역 글귀 -->
+    <string name="recommend_theme">테마</string>
+    <string name="recommend_area">별 추천 여행지</string>
+    <!-- 메인 - 테마 -->
+    <string name="sea">바다</string>
+    <string name="mountain">산</string>
+    <string name="valley">계곡</string>
+    <string name="fishing">낚시</string>
+    <!-- 메인 - 반려견 -->
+    <string name="pet">반려견과 함께하는 캠핑</string>
+    <string name="more">더보기</string>
+
+    <!-- 검색 - 탭 레이아웃 항목 이름 및 힌트 명 -->
+    <string name="falName">숙소명</string>
+    <string name="falHint">숙소명 입력</string>
+    <string name="keyWord">키워드</string>
+    <string name="keyWordHint">키워드 입력</string>
+    <string name="recent">최근 검색어</string>
+
+    <!-- 지역 -->
+    <string name="select_action_bar">지역선택</string>
+    <string name="gang_won">강원</string>
+    <string name="tae_an">태안</string>
+    <string name="je_ju">제주</string>
+    <string name="gyung_gi">경기</string>
+    <string name="choong_chung">충청</string>
+    <string name="gyung_sang">경상</string>
+    <string name="jun_la">전라</string>
+
+    <!-- 바텀 네이게이션 - 항목 이름 -->
+    <string name="home">홈</string>
+    <string name="search">검색</string>
+    <string name="around">내주변</string>
+    <string name="favorite">찜</string>
+    <string name="favoriteList">찜 목록</string>
+
+    <string name="remove">삭제</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+
+    <!-- 리스트 - 빈 결과 -->
+    <string name="empty">검색 결과가 없습니다!</string>
+    <!-- 리스트 - 네트워크 문제 -->
+    <string name="error">네트워크 연결이 원할하지 않습니다.\n잠시 후 다시 이용해주세요.</string>
+    <!-- 알림 -->
+    <string name="min_text_error">정확한 검색을 위해\n두 글자 이상 검색어를 입력해주세요.</string>
+    <string name="ask_real_cancel">목록에서 삭제하시겠습니까?</string>
+    <!-- 문자열 합치기 -->
+    <string name="concat">%1$s%2$s</string>
+</resources>

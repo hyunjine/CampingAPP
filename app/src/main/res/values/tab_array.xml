@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "tabArray">
+        <item>@string/falName</item>
+        <item>@string/keyWord</item>
+    </string-array>
+</resources>
