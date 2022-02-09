@@ -21,6 +21,7 @@
 |DataBinding|Gson||ViewPager2|
 |BindingAdapter|||TabLayout|
 ## 어플 소개
+✔ **설명 후 이미지를 나열하였습니다!**
 
 * 상단 3개의 아이콘들과 우측 하단의 더보기 버튼을 클릭 시 지역 선택화면으로 전환되어집니다.
 <p align="left">
