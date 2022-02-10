@@ -2,7 +2,6 @@
 **전국의 캠핑 장소들을 사용자가 원하는 조건에 따라 검색하고 예약을 할 수 있게 도와주는 어플리케이션**
 ## Preview
 <p align="left">
-<img src=".gif" width="22%"/>
 <img src="https://user-images.githubusercontent.com/92709137/153363774-b21a279b-dd4c-4fa0-8796-53f70f9e380d.gif" width="45%"/>
 <img src="https://user-images.githubusercontent.com/92709137/153363357-34705713-5c7c-4561-a82f-1e1629727b9c.gif" width="45%"/>
 </p>
